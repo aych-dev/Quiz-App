@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frontpage-container {
+  display: grid;
+  justify-content: center;
+  background-color: #f5f7fb;
+  align-items: center;
+  margin: auto;
+  padding: 275px;
+  background-image: url(Images/blueBlob.png), url(Images/yellowBlob.png);
+  background-repeat: no-repeat;
+  background-position: 50% 80%, center 20%;
+}
+
+.frontpage-content-container {
+  display: grid;
+  gap: 15px;
+}
+
+.content-container {
+  background-image: url(Images/blueBlob.png), url(Images/yellowBlob.png);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+}
+
+.answer-button {
+  font-family: 'Inter';
+  text-align: center;
+  font-size: 11px;
+  border-radius: 30px;
+  border: solid, #4d5b9e;
+  padding: 8px;
+  color: #293264;
+  margin: 5px 3px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+#correct.answer-button {
+  background-color: #94d7a2;
+}
+
+#incorrect.answer-button {
+  background-color: #f8bcbc;
+}
+
+#not-selected.answer-button {
+  background-color: whitesmoke;
+}
+
+.selected-answer-button {
+  background-color: #d6dbf5;
+}
+
+.submit-button {
+  border-radius: 30px;
+  padding: 15px;
+  margin-left: 20px;
+  background-color: #4d5b9e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 490px) {
+  .start-quiz-container {
+    margin: 30px;
+    margin-bottom: 40px;
+    margin-top: 39px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .start-quiz-container {
+    margin: 40px;
+  }
+}
