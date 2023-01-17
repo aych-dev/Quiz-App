@@ -56,9 +56,10 @@ const QuestionContainer = styled.div`
   width: 100%;
   margin-top: 20px;
   text-align: left;
-
+  padding: 5px;
+  margin-left: 10px;
   @media only screen and (max-width: 490px) {
-    margin-top: 2px;
+    margin-top: 10px;
   }
 `;
 

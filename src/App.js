@@ -106,27 +106,25 @@ export default function App() {
 
   return (
     <div className='main-container'>
-      <div className='content-container'>
-        {startQuiz ? (
-          <div className='start-quiz-container'>
-            {questionElement}
-            <ButtonContainer>
-              {checked && (
-                <FinalScore>You Scored {score}/5 correct answers </FinalScore>
-              )}
+      {startQuiz ? (
+        <div className='content-container'>
+          {questionElement}
+          <ButtonContainer>
+            {checked && (
+              <FinalScore>You Scored {score}/5 correct answers </FinalScore>
+            )}
 
-              <button
-                className='submit-button'
-                onClick={checked ? handlePlayAgain : handleCheckAnswer}
-              >
-                {checked ? 'Play Again' : 'Check Answers'}
-              </button>
-            </ButtonContainer>
-          </div>
-        ) : (
-          <Frontpage startQuiz={handleStartQuiz} />
-        )}
-      </div>
+            <button
+              className='submit-button'
+              onClick={checked ? handlePlayAgain : handleCheckAnswer}
+            >
+              {checked ? 'Play Again' : 'Check Answers'}
+            </button>
+          </ButtonContainer>
+        </div>
+      ) : (
+        <Frontpage startQuiz={handleStartQuiz} />
+      )}
     </div>
   );
 }
@@ -135,7 +133,8 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background: transparent;
 
   @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {

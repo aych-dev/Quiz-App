@@ -7,7 +7,7 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
 }
@@ -44,9 +44,6 @@ body {
   background-position: right top, left bottom;
 }
 
-.start-quiz-container {
-  margin-top: 30px;
-}
 .answer-button {
   font-family: 'Inter';
   text-align: center;
@@ -87,21 +84,11 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
-  .start-quiz-container {
-    margin: 40px;
-  }
-}
-
 @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
   .content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    margin: 10px;
 
-  .start-quiz-container {
-    height: 700px;
+    height: 100vh;
   }
 
   .submit-button {
