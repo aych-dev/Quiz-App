@@ -136,6 +136,11 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  background: transparent;
+
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    margin-top: 10px;
+  }
 `;
 
 const FinalScore = styled.span`

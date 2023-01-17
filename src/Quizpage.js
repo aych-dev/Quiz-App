@@ -64,6 +64,11 @@ const QuestionContainer = styled.div`
 
 const Question = styled.h4`
   font-family: 'Karla';
+
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    margin: auto;
+    overflow-wrap: break-word;
+  }
 `;
 
 const LineDiv = styled.div`
