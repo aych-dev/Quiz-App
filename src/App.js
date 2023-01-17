@@ -135,7 +135,6 @@ const ButtonContainer = styled.div`
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: transparent;
 
   @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
     margin-top: 10px;

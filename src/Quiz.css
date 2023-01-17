@@ -42,6 +42,7 @@ body {
   background-image: url(Images/blueBlob.png), url(Images/yellowBlob.png);
   background-repeat: no-repeat;
   background-position: right top, left bottom;
+  background-color: #f5f7fb;
 }
 
 .answer-button {
