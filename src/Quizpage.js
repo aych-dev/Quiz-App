@@ -14,7 +14,7 @@ export default function Quizpage(props) {
     props.handleSelectedAnswer(props.id, answer);
   };
 
-  const answerElement = props.allAnswers.map((answer) => {
+  const answerElement = allAnswers.map((answer) => {
     let id = null;
     if (props.quizData.checked) {
       if (answer === props.quizData.correctAnswer) {
